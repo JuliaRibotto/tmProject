@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head") %>
+</head>
+<body>
+
+    <nav>
+        <%- include("../partials/nav") %>
+    </nav>
+    <header>
+       <h1 class="titulo-blanco">Tienda<br> de<br> Muebles</h1> 
+       <img src="/imagenes/foto-living.jpg" alt="imagen-living">
+    </header>
+    
+    <main class="cont-padre">
+        <%data.forEach((prod) => {%>
+            <div class="card">
+                <img class="img-card" src="<%=prod.imagen%>" alt="imagen=producto">
+                <p class="desc-card"> <%=prod.descripcion%> </p>
+                <a class="boton-ver" href="#"> Ver Mas</a>
+            </div> 
+        <%})%>
+            
+      
+    </main>
+   
+    
+    <footer>
+        <%- include("../partials/footer") %>
+    </footer>
+</body>
+</html>
