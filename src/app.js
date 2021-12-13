@@ -13,7 +13,7 @@ databaseConnection.connect();
 //Vamos a recibir info en formato json
 app.use(express.json());
 // Vamos a recibir info en forma de arrays 
-app.use(express.urlencoded ({extended:false}))
+app.use(express.urlencoded ({extended:false}));
 
 app.set("views",path.join(__dirname,"views"));
 app.use(express.static(path.join(__dirname,"public")));

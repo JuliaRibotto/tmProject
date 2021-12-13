@@ -1,6 +1,5 @@
 const { render } = require("ejs");
 const express = require("express");
-const databaseConnection = require("../../config/database")
 
 //Routeo
 const routes = express.Router();
